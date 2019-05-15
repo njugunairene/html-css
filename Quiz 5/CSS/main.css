@@ -1,0 +1,21 @@
+body{
+	background-image:url(../image/he.gif),url(../image/peck.jpg),url(../image/balloon.png), url(../image/boy.jpg);
+	background-size:30%,50%,20%, cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: right 10%,center 10%,left 5%,center;
+	
+
+}
+
+.cont{
+	
+
+	width: 400px;
+	background-color: rgba(0,0,0,0,5);
+	min-height: 1000px;
+	padding: 30px;
+	margin: 0 auto;
+	color: black;
+	font-size: 25px;
+	}

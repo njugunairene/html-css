@@ -1,0 +1,45 @@
+body{
+	background-color:#e8ebef;
+	font-family: arial;
+	color: 
+
+}
+.login-cont{
+	max-width: 400px;
+	min-height: 300px;
+	margin: 10% auto;
+	background-color: white;
+	padding: 20px;
+}
+.login-cont{
+	padding: 
+}s
+.login-cont form ul{
+	padding: 0px;
+	margin: 0px;
+
+}
+.login-cont form ul li{
+	padding: 0px;
+	margin: 0px 0 10px 0;
+	list-style: none;
+
+}
+
+
+.login-cont form label{
+	display: block;
+	padding-bottom: 5px;
+	font-size: 12px;
+}
+
+.login-cont form input[text=type], .login-cont form input[type=email], .login-cont form input[type=passward]{
+	display: block;
+	width: 328px;
+	border:1px solid #ccc;
+	height: 35px;
+	text-indent: 10px;
+	background-color: 
+
+
+}
