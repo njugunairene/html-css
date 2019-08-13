@@ -1,0 +1,30 @@
+@font-face{
+	font-family: Ayres;
+	src:url(../fonts/Ayres.ttf);
+
+}
+@font-face{
+	font-family: njoki;
+	scr:;
+}
+body{
+	background-color:#ddd;
+
+	background-size:cover;
+
+}
+.cont{
+	width: 800px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 20px;
+}
+.fb{
+	background:#3b5998;
+	width: 100px;
+	height: 50px;
+
+}
+.wat{
+	background-color:#25D366;
+}

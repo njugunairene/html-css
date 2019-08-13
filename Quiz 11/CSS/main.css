@@ -1,0 +1,615 @@
+/* INFORMATION
+	- Author:   Dean P.
+	- Website:  www.deanp.eu
+	- Contact:  deanpif@gmail.com
+*/
+/* RESET SETTINGS
+   ----------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+textarea:focus, input:focus, select:focus {
+  outline: 0;
+}
+
+textarea, input, select {
+  border: 0;
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+.header {
+  background-color: #252e30;
+  font-size: 0;
+  padding: 0 10%;
+}
+.header__logo {
+  width: 30%;
+  display: inline-block;
+  font-size: 16px;
+}
+.header__logo a {
+  display: inline-block;
+}
+.header__logo a div {
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  background-color: #4b5456;
+  margin: 15px 0;
+  position: relative;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.header__logo a div span {
+  font-size: 32px;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  text-transform: uppercase;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.header__logo a h1 {
+  display: inline-block;
+  font-size: 30px;
+  color: #fff;
+  vertical-align: middle;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.header__logo a h1 span {
+  color: #2ecc71;
+}
+.header__nav {
+  width: 70%;
+  display: inline-block;
+  font-size: 16px;
+  text-align: right;
+}
+.header__nav li {
+  display: inline-block;
+}
+.header__nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+.header__nav a:hover {
+  color: #2ecc71;
+}
+
+.footer {
+  padding: 50px 10%;
+  text-align: center;
+  background-color: #191f21;
+}
+.footer p {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #4b5456;
+  margin-bottom: 27px;
+}
+.footer a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #4b5456;
+  position: relative;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.footer a svg {
+  height: 17px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 17px;
+  display: inline-block;
+  fill: #191f21;
+}
+.footer a:hover svg {
+  fill: #f2f2f1;
+}
+
+.main h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #566366;
+  margin-bottom: 47px;
+  text-transform: uppercase;
+}
+.main h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #566366;
+  text-transform: uppercase;
+}
+.main p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #919191;
+  line-height: 30px;
+}
+.main__hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.main__hero__list {
+  height: 100%;
+  overflow: hidden;
+}
+.main__hero__list li {
+  height: 100%;
+  position: relative;
+}
+.main__hero__list div {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+.main__hero__list img {
+  width: 100%;
+}
+.main__hero__list h2 {
+  font-size: 60px;
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px 0;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+.main__hero__list a {
+  border: 2px solid #fff;
+  padding: 20px 0;
+  display: block;
+  font-weight: bold;
+  width: 185px;
+  font-size: 18px;
+  margin: 50px auto 0 auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+.main__hero__markers {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+.main__hero__markers span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin: 10px 0;
+  cursor: pointer;
+  display: block;
+}
+.main__hero__markers span.active {
+  background-color: #fff;
+}
+.main__aboutme__top {
+  font-size: 0;
+  padding: 100px 10%;
+}
+.main__aboutme__top div {
+  width: 33.333%;
+  display: inline-block;
+  padding: 0 30px;
+}
+.main__aboutme__bottom {
+  display: table;
+  font-size: 0;
+}
+.main__aboutme__bottom__image {
+  width: 30%;
+  display: table-cell;
+  vertical-align: top;
+  overflow: hidden;
+  position: relative;
+}
+.main__aboutme__bottom__image img {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.main__aboutme__bottom__text {
+  width: 70%;
+  display: table-cell;
+  background-color: #f2f2f1;
+  padding: 100px 10% 100px 100px;
+  vertical-align: top;
+}
+.main__aboutme__bottom__text > p {
+  margin-bottom: 45px;
+}
+.main__aboutme__bottom__text ul {
+  font-size: 0;
+}
+.main__aboutme__bottom__text ul li {
+  width: 50%;
+  display: inline-block;
+  padding-right: 50px;
+}
+.main__aboutme__bottom__text ul li:first-child {
+  margin-bottom: 50px;
+}
+.main__aboutme__bottom__text ul span {
+  display: inline-block;
+  width: 42px;
+  vertical-align: top;
+  margin-right: 25px;
+}
+.main__aboutme__bottom__text ul div {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 67px);
+}
+.main__aboutme__bottom__text ul h4 {
+  margin-bottom: 30px;
+}
+.main__skills {
+  padding: 100px 10%;
+  font-size: 0;
+}
+.main__skills > div {
+  display: inline-block;
+  width: 50%;
+  padding-right: 50px;
+  vertical-align: top;
+}
+.main__skills > div p {
+  margin-bottom: 45px;
+}
+.main__skills > div a {
+  display: block;
+  width: 185px;
+  font-size: 18px;
+  padding: 20px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2ecc71;
+  border: 2px solid #2ecc71;
+  font-weight: bold;
+  text-align: center;
+}
+.main__skills ul {
+  display: inline-block;
+  width: 50%;
+  padding-left: 50px;
+  vertical-align: top;
+}
+.main__skills ul li {
+  margin-bottom: 40px;
+}
+.main__skills ul li:last-child {
+  margin-bottom: 0;
+}
+.main__skills ul h4 {
+  margin-bottom: 20px;
+}
+.main__skills ul div {
+  width: 100%;
+  background-color: #f2f2f1;
+  height: 30px;
+}
+.main__skills ul div span {
+  display: block;
+  height: 30px;
+  background-color: #2ecc71;
+  color: #fff;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.main__resume__download {
+  padding: 100px 10%;
+  background-color: #f2f2f1;
+  text-align: center;
+  position: relative;
+}
+.main__resume__download a {
+  display: block;
+  width: 220px;
+  margin: 48px auto 0 auto;
+  font-size: 18px;
+  padding: 20px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2ecc71;
+  border: 2px solid #2ecc71;
+  font-weight: bold;
+  text-align: center;
+}
+.main__resume__download:after {
+  content: ' ';
+  display: block;
+  width: 80px;
+  height: 80px;
+  bottom: -50px;
+  left: 50%;
+  background-color: #f2f2f1;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+.main__resume__web {
+  padding: 100px 10%;
+  font-size: 0;
+}
+.main__resume__web > div {
+  display: inline-block;
+  width: 50%;
+  padding-right: 50px;
+  vertical-align: top;
+}
+.main__resume__web > div p {
+  margin-bottom: 45px;
+}
+.main__resume__web ul {
+  display: inline-block;
+  width: 50%;
+  padding-left: 50px;
+  vertical-align: top;
+}
+.main__resume__web ul li {
+  margin-bottom: 80px;
+}
+.main__resume__web ul li:last-child {
+  margin-bottom: 0;
+}
+.main__resume__web ul h4 {
+  margin-bottom: 15px;
+}
+.main__resume__web ul span {
+  display: block;
+  font-size: 18px;
+  color: #919191;
+  margin-bottom: 15px;
+}
+.main__resume__web ul span span {
+  font-weight: 300;
+  display: inline-block;
+  margin-bottom: 0;
+}
+.main__resume__web ul div {
+  display: inline-block;
+  background-color: #2ecc71;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px;
+  text-transform: uppercase;
+}
+.main__resume__web ul hr {
+  margin: 30px 0;
+  display: block;
+  border: 0;
+  background-color: #ccc;
+  height: 1px;
+}
+.main__testimonials {
+  padding: 100px 10%;
+  background-color: #f2f2f1;
+  text-align: center;
+}
+.main__testimonials ul p {
+  font-size: 24px;
+  line-height: 35px;
+}
+.main__testimonials ul span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #566366;
+  margin: 46px 0;
+  display: block;
+}
+.main__testimonials div span {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #2ecc71;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.main__testimonials div span.active {
+  background-color: #2ecc71;
+}
+.main__portfolio {
+  padding: 100px 10%;
+  text-align: center;
+}
+.main__portfolio p {
+  margin-bottom: 90px;
+}
+.main__portfolio > ul {
+  font-size: 0;
+}
+.main__portfolio > ul > li {
+  overflow: hidden;
+  height: 300px;
+  width: calc( 33.333% - 40px);
+  margin: 20px;
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+  background-color: #f2f2f1;
+}
+.main__portfolio > ul > li img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.main__portfolio > ul > li:hover img {
+  width: 120%;
+}
+.main__portfolio > ul > li:first-child {
+  width: calc( 33.333% - 40px);
+  background-color: #252e30;
+  margin: 0 20px;
+  text-align: left;
+  padding: 40px;
+}
+.main__portfolio > ul > li:first-child p {
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+.main__portfolio > ul > li:first-child ul li {
+  font-size: 16px;
+}
+.main__portfolio > ul > li:first-child ul a {
+  text-decoration: none;
+  color: #919191;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+.main__portfolio > ul > li:first-child ul a.active {
+  color: #fff;
+}
+.main__contact {
+  padding: 100px 10%;
+  background-color: #252e30;
+  font-size: 0;
+}
+.main__contact h3 {
+  color: #fff;
+}
+.main__contact > div {
+  display: inline-block;
+  width: 50%;
+  padding-right: 50px;
+  vertical-align: top;
+}
+.main__contact > div > p {
+  margin-bottom: 45px;
+}
+.main__contact > div div {
+  margin-bottom: 45px;
+}
+.main__contact > div span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  display: block;
+}
+.main__contact > div span p {
+  display: inline-block;
+}
+.main__contact form {
+  display: inline-block;
+  width: 50%;
+  padding-left: 50px;
+  vertical-align: top;
+}
+.main__contact form label {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 15px;
+  display: block;
+  font-weight: 300;
+}
+.main__contact form label span {
+  color: #919191;
+  display: inline-block;
+  margin-left: 5px;
+}
+.main__contact form input[type="text"], .main__contact form input[type="email"] {
+  background-color: #4b5456;
+  margin-bottom: 35px;
+  color: #fff;
+  width: 100%;
+  font-weight: 300;
+  padding: 15px 10px;
+  font-size: 18px;
+  font-family: 'Roboto';
+}
+.main__contact form textarea {
+  height: 270px;
+  padding: 10px;
+  font-size: 15px;
+  resize: vertical;
+  font-family: 'Roboto';
+  font-weight: 300;
+  margin-bottom: 35px;
+  width: 100%;
+  color: #fff;
+  background-color: #4b5456;
+}
+.main__contact form input[type="submit"] {
+  background-color: #191f21;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+}

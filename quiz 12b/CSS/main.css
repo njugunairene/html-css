@@ -5,6 +5,9 @@
   padding-top: 10%;
    padding-bottom: 10%;
 }
+body{
+  background-color: white;
+}
 
 h2{
  border-top: 1px solid white;
@@ -26,8 +29,78 @@ h2{
   border: 1px solid white;
   text-decoration: none;
 }
+.main{
+  background-color: pink;
+  margin: 0 auto;
+  width: 1200px;
+}
 
-.pp{background-color: #313330;
+header{
+ 
+  height: 50px;
+  background-color: #313330;
+}
+
+nav a{
+  float: right;
+  padding: 15px;
+  
+  text-decoration: none;
+  color: white;
+
+
+}
+nav a:hover{
+  color: green;
+}
+
+.first{
+  
+  background-color:blue;
+
+
+}
+.first div{
+
+}
+.value{
+width: 30.33%;  
+}
+
+.sec{
+  background-color: grey;
+}
+.third{
+  width: 500px;
+  float: r
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/*.pp{background-color: #313330;
 
 }
 
@@ -54,7 +127,7 @@ nav a{
 nav a:hover{
   color: green;
 }
-/*.first{
+.first{
   column-count: 3;
   text-align: justify;
 }
@@ -74,7 +147,7 @@ nav a:hover{
 
 }
 .side{
- /* padding: 20px;*/
+ /* padding: 20px;
   column-count: 2
 
 
@@ -151,18 +224,18 @@ nav a:hover{
 /*.bb{
   background-color: yellow;
 }*/
-.my{
+/*/*//*/*//*.my{
   width: 500px;
 
 }
 .dip{
   float: left;
  /* width: 350px;*/
-  text-align: justify;
+  /*text-align: justify;
   margin-left: 50px;
+*/
 
-}
-h5{
+/*h5{
   width: 45px;
   height: 18px;
   background-color: green;
@@ -210,5 +283,6 @@ footer{
   background-color: black;
   height: 100px;
   margin-bottom: 50px;
-}*/
+}
 
+*/
